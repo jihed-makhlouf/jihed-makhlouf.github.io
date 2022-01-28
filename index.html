@@ -1,0 +1,711 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.0.0-beta.1 for Hugo">
+<meta name=author content="Jihed Makhlouf">
+<meta name=description content="Jihed Makhlouf, Ph.D. Software Engineer and currently postdoctoral researched at Kyushu University, interested in Machine Learning, Data Science and AI.">
+<link rel=alternate hreflang=en-us href=https://jihed-makhlouf.github.io/>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<meta name=theme-color content="rgb(0, 136, 204)">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-dark disabled>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin=anonymous async></script>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono&display=swap">
+<link rel=stylesheet href=/css/wowchemy.b14829da7e5ef925bf03f8c610e13611.css>
+<link rel=alternate href=/index.xml type=application/rss+xml title="Jihed Makhlouf">
+<link rel=manifest href=/index.webmanifest>
+<link rel=icon type=image/png href=/images/icon_hu481ca81fdf68867fbb57d923a99c3654_1028_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/images/icon_hu481ca81fdf68867fbb57d923a99c3654_1028_192x192_fill_lanczos_center_3.png>
+<link rel=canonical href=https://jihed-makhlouf.github.io/>
+<meta property="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="Jihed Makhlouf">
+<meta property="og:url" content="https://jihed-makhlouf.github.io/">
+<meta property="og:title" content="Jihed Makhlouf">
+<meta property="og:description" content="Jihed Makhlouf, Ph.D. Software Engineer and currently postdoctoral researched at Kyushu University, interested in Machine Learning, Data Science and AI."><meta property="og:image" content="https://jihed-makhlouf.github.io/media/picture.jpg">
+<meta property="twitter:image" content="https://jihed-makhlouf.github.io/media/picture.jpg"><meta property="og:locale" content="en-us">
+<meta property="og:updated_time" content="2022-01-15T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://jihed-makhlouf.github.io?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://jihed-makhlouf.github.io"}</script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js integrity="sha256-5VhCqFam2Cn+yjw61zbBNrbHVJ6SRydPeKopYlngbiQ=" crossorigin=anonymous></script>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css integrity="sha256-zQ0LblD/Af8vOppw18+2anxsuaz3pWYyVWi+bTvTH8Q=" crossorigin=anonymous>
+<script>window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"rgb(0, 136, 204)",text:"rgb(255, 255, 255)"},button:{background:"rgb(255, 255, 255)",text:"rgb(0, 136, 204)"}},theme:"classic",content:{message:"This website uses cookies to ensure you get the best experience on our website.",dismiss:"Got it!",link:"Learn more",href:"https://www.cookiesandyou.com"}})})</script>
+<title>Jihed Makhlouf</title>
+</head>
+<body id=top data-spy=scroll data-offset=70 data-target=#navbar-main class="page-wrapper dark">
+<script src=/js/wowchemy-init.min.01a9270e8774e8b3ff6552ca91bc224c.js></script>
+<aside class=search-results id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>Search</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=#><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=Search... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
+</aside>
+<div class=page-header>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/>Jihed Makhlouf</a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/>Jihed Makhlouf</a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-center" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class=nav-link href=/#about data-target=#about><span>Home</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#projects data-target=#projects><span>Projects</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#publications data-target=#publications><span>Publications</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/experience/><span>Experience</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/achievements/><span>Achievements</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#contact data-target=#contact><span>Contact</span></a>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=Search><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>Automatic</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+<div class=page-body>
+<span class="js-widget-page d-none"></span>
+<section id=about class="home-section wg-about">
+<div class=home-section-bg></div>
+<div class=container>
+<div class=row>
+<div class="col-12 col-lg-4">
+<div id=profile>
+<img class="avatar avatar-square" src=/authors/admin/avatar_hu41fb794e4348f88f39ba77c25b38f1bc_144823_270x270_fill_q75_lanczos_center.jpg alt="Jihed Makhlouf">
+<div class=portrait-title>
+<h2>Jihed Makhlouf</h2>
+<h3>Postdoctoral Researcher and Software Engineer</h3>
+<h3>
+<a href=https://www.kyushu-u.ac.jp/en/ target=_blank rel=noopener>
+<span>Kyushu University, Japan</span>
+</a>
+</h3>
+<h3>
+<a href=https://www.osakafu-u.ac.jp/en/ target=_blank rel=noopener>
+<span>Osaka Prefecture University, Japan</span>
+</a>
+</h3>
+</div>
+<ul class=network-icon aria-hidden=true>
+<li>
+<a href=/#contact aria-label=envelope>
+<i class="fas fa-envelope big-icon"></i>
+</a>
+</li>
+<li>
+<a href=https://www.researchgate.net/profile/Jihed_Makhlouf target=_blank rel=noopener aria-label=researchgate>
+<i class="ai ai-researchgate big-icon"></i>
+</a>
+</li>
+<li>
+<a href=https://github.com/jihed-makhlouf target=_blank rel=noopener aria-label=github>
+<i class="fab fa-github big-icon"></i>
+</a>
+</li>
+<li>
+<a href=https://www.linkedin.com/in/makhloufjihed target=_blank rel=noopener aria-label=linkedin>
+<i class="fab fa-linkedin big-icon"></i>
+</a>
+</li>
+<li>
+<a href=/media/resume.pdf aria-label=cv>
+<i class="ai ai-cv big-icon"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-12 col-lg-8">
+<h1>Biography</h1>
+<div class=article-style>
+<p>I am a software engineer and a postdoctoral researcher working at Kyushu University and Osaka Prefecture University in Japan. My main research area is educational technology, educational data mining, and the application of artificial intelligence to enhance education. For more details about my research projects, please check the <a href=#projects><em>Projects</em></a> section.</p>
+<p>Besides my work as a researcher, I am a full-stack software engineer and I have been working on freelance projects and remote consultancy missions for different clients mainly in France and KSA. For more details about my services, please head toward the <a href=/experience/><em>Experience</em></a> page.</p>
+</div>
+<div class=row>
+<div class=col-md-5>
+<h3>Interests</h3>
+<ul class=ul-interests>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Educational Technology</li>
+<li>Educational Data Mining</li>
+<li>Natural Language Processing</li>
+</ul>
+</div>
+<div class=col-md-7>
+<h3>Education</h3>
+<ul class="ul-edu fa-ul">
+<li>
+<i class="fa-li fas fa-graduation-cap"></i>
+<div class=description>
+<p class=course>Ph.D., Artificial Intelligence in Education, 2021</p>
+<p class=institution>Kyushu University</p>
+</div>
+</li>
+<li>
+<i class="fa-li fas fa-graduation-cap"></i>
+<div class=description>
+<p class=course>Master's degree, Optimization and meta-heuristics, 2017</p>
+<p class=institution>University of Tunis El Manar</p>
+</div>
+</li>
+<li>
+<i class="fa-li fas fa-graduation-cap"></i>
+<div class=description>
+<p class=course>Engineer's degree, Software Engineering, 2015</p>
+<p class=institution>University of Tunis El Manar</p>
+</div>
+</li>
+<li>
+<i class="fa-li fas fa-graduation-cap"></i>
+<div class=description>
+<p class=course>Bachelor's degree, Software and Information Systems, 2012</p>
+<p class=institution>University of Tunis El Manar</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=projects class="home-section wg-portfolio">
+<div class=home-section-bg></div>
+<div class=container>
+<div class=row>
+<div class="col-12 col-lg-4 section-heading">
+<h1>Projects</h1>
+<p>Research projects</p>
+</div>
+<div class="col-12 col-lg-8">
+<span class="d-none default-project-filter">*</span>
+<div class=project-toolbar>
+<div class=project-filters>
+<div class=btn-toolbar>
+<div class="btn-group flex-wrap">
+<a href=# data-filter=* class="btn btn-primary btn-lg active">All</a>
+<a href=# data-filter=.js-id-Machine-Learning class="btn btn-primary btn-lg">ML</a>
+<a href=# data-filter=.js-id-Deep-Learning class="btn btn-primary btn-lg">DL</a>
+<a href=# data-filter=.js-id-Educational-Data-Mining class="btn btn-primary btn-lg">EDM</a>
+<a href=# data-filter=.js-id-Natural-Language-Processing class="btn btn-primary btn-lg">NLP</a>
+</div>
+</div>
+</div>
+</div>
+<div class="isotope projects-container row js-layout-row">
+<div class="col-12 isotope-item js-id-Machine-Learning js-id-Educational-Data-Mining js-id-Natural-Language-Processing">
+<div class="media stream-item">
+<div class=media-body>
+<h3 class="article-title mb-0 mt-0">
+<a href=/project/comments/>Comments Data Mining</a>
+</h3>
+<a href=/project/comments/ class=summary-link>
+<div class=article-style>
+Collecting students' freely written comments to assess their learning experience and provide automated feedback.
+</div>
+</a>
+<div class="stream-meta article-metadata">
+</div>
+<div class=btn-links>
+</div>
+</div>
+<div class=ml-3>
+<a href=/project/comments/>
+<img src=/project/comments/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_132274_10431526b7e70af9a70ac9ef0998eb0a.jpg data-src=/project/comments/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_132274_150x0_resize_q75_lanczos.jpg alt="Comments Data Mining" class=lazyload>
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-Deep-Learning js-id-Educational-Data-Mining js-id-Natural-Language-Processing js-id-Learning-Analytics">
+<div class="media stream-item">
+<div class=media-body>
+<h3 class="article-title mb-0 mt-0">
+<a href=/project/coursebot/>Coursebot</a>
+</h3>
+<a href=/project/coursebot/ class=summary-link>
+<div class=article-style>
+An integrated platform for educational technology end learning analytics.
+</div>
+</a>
+<div class="stream-meta article-metadata">
+</div>
+<div class=btn-links>
+</div>
+</div>
+<div class=ml-3>
+<a href=/project/coursebot/>
+<img src=/project/coursebot/featured_hu37f88119bb88d50a62cf30a7c95a3554_76574_c1b3b55e7f2c03d2ac290d8e8a142ee6.jpg data-src=/project/coursebot/featured_hu37f88119bb88d50a62cf30a7c95a3554_76574_150x0_resize_q75_lanczos.jpg alt=Coursebot class=lazyload>
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-Learning-Analytics js-id-Machine-Learning">
+<div class="media stream-item">
+<div class=media-body>
+<h3 class="article-title mb-0 mt-0">
+<a href=/project/e-book/>E-book Systems</a>
+</h3>
+<a href=/project/e-book/ class=summary-link>
+<div class=article-style>
+Investigating students' reading behaviors using a digital content delivery system.
+</div>
+</a>
+<div class="stream-meta article-metadata">
+</div>
+<div class=btn-links>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://www.let.media.kyoto-u.ac.jp/en/project/digital-teaching-material-delivery-system-bookroll/ target=_blank rel=noopener>
+<i class="fa fa-link mr-1"></i>
+BookRoll System
+</a>
+</div>
+</div>
+<div class=ml-3>
+<a href=/project/e-book/>
+<img src=/project/e-book/featured_hufe5cd4b6697ab206bbe8aa23228510fb_212215_5f75389161b541ceff496e094d3272a1.png data-src=/project/e-book/featured_hufe5cd4b6697ab206bbe8aa23228510fb_212215_150x0_resize_lanczos_3.png alt="E-book Systems" class=lazyload>
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-Educational-Data-Mining js-id-Machine-Learning">
+<div class="media stream-item">
+<div class=media-body>
+<h3 class="article-title mb-0 mt-0">
+<a href=/project/trackthink/>Programming Web Search</a>
+</h3>
+<a href=/project/trackthink/ class=summary-link>
+<div class=article-style>
+Track students' web search behavior when solving programming exercises
+</div>
+</a>
+<div class="stream-meta article-metadata">
+</div>
+<div class=btn-links>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://ubi-naist.github.io/TrackThink/en/ target=_blank rel=noopener>
+<i class="fa fa-link mr-1"></i>
+TrackThink Website
+</a>
+</div>
+</div>
+<div class=ml-3>
+<a href=/project/trackthink/>
+<img src=/project/trackthink/featured_hu756b488fee7ee9276eeaf60784e16e7e_3618839_9fd8367ff76fece0f52a748c01936501.jpg data-src=/project/trackthink/featured_hu756b488fee7ee9276eeaf60784e16e7e_3618839_150x0_resize_q75_lanczos.jpg alt="Programming Web Search" class=lazyload>
+</a>
+</div>
+</div>
+</div>
+<div class="col-12 isotope-item js-id-Educational-Data-Mining js-id-Machine-Learning js-id-Intelligent-Tutoring-System">
+<div class="media stream-item">
+<div class=media-body>
+<h3 class="article-title mb-0 mt-0">
+<a href=/project/stem/>STEM Career Prediction</a>
+</h3>
+<a href=/project/stem/ class=summary-link>
+<div class=article-style>
+Predicting if students will pursue a career in a STEM field based on the analysis of their usage of an Intelligent Tutoring System.
+</div>
+</a>
+<div class="stream-meta article-metadata">
+</div>
+<div class=btn-links>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://new.assistments.org/ target=_blank rel=noopener>
+<i class="fa fa-link mr-1"></i>
+ASSISTments ITS
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://sites.google.com/view/assistmentsdatamining/data-mining-competition-2017 target=_blank rel=noopener>
+<i class="fa fa-link mr-1"></i>
+Predicting STEM Career Competition
+</a>
+</div>
+</div>
+<div class=ml-3>
+<a href=/project/stem/>
+<img src=/project/stem/featured_hu9d5dcdacbcf6dfaf9d45c97d44f58c16_124811_1ff52a6153ce2cf2a113056385eaddcd.jpg data-src=/project/stem/featured_hu9d5dcdacbcf6dfaf9d45c97d44f58c16_124811_150x0_resize_q75_lanczos.jpg alt="STEM Career Prediction" class=lazyload>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=publications class="home-section wg-pages">
+<div class=home-section-bg></div>
+<div class=container>
+<div class=row>
+<div class="col-12 col-lg-4 section-heading">
+<h1>Recent Publications</h1>
+<p>Peer-reviewed publications</p>
+</div>
+<div class="col-12 col-lg-8">
+<div class="alert alert-note">
+<div>
+Quickly discover relevant content by <a href=./publication/>filtering publications</a>.
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/mobiquitous21/>A Privacy-aware Browser Extension to Track User Search Behavior for Programming Course Supplement</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Yutaka Arakawa</span>, <span>
+Ko Watanabe</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/mobiquitous21/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/trackthink/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://mobiquitous.eai-conferences.org/2021/ target=_blank rel=noopener>
+Conference
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/springer_csedu21/>Automatic Evaluation of Students' Learning Experience Based on Their Freely-Written Comments</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/springer_csedu21/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/coursebot/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://doi.org/10.1007/978-3-030-86439-2_25 target=_blank rel=noopener>
+DOI
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/csedu21/>Mining Students’ Comments to Build an Automated Feedback System</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/csedu21/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/comments/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://doi.org/10.5220/0010372200150025 target=_blank rel=noopener>
+DOI
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/icce20/>Automatic Feedback Models to Students Freely Written Comments</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/icce20/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/comments/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://apsce.net/upfile/icce2020/ICCE%202020%20Proceedings%20-%20Volume%20I%20v4.pdf target=_blank rel=noopener>
+Proceedings
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/jedm20/>Analysis of Click-Stream Data to Predict STEM Careers from Student Usage of an Intelligent Tutoring System</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/jedm20/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/stem/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://doi.org/10.5281/zenodo.4008050 target=_blank rel=noopener>
+DOI
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/csedu20/>Prediction Models for Automatic Assessment to Students’ Freely-written Comments</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/csedu20/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/comments/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://doi.org/10.5220/0009580300770086 target=_blank rel=noopener>
+DOI
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/lak20_wk/>Predicting Student Exam Scores Based on Click stream Level Data of Their Usage of an E Book System</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/lak20_wk/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/e-book/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://www.solaresearch.org/core/lak20-companion-proceedings/ target=_blank rel=noopener>
+Proceedings
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/lak19_wk/>Investigating Reading Behaviors within Student Reading Sessions to Predict their Performance</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/lak19_wk/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/e-book/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://www.solaresearch.org/core/companion-proceedings-of-the-9th-international-learning-analytics-and-knowledge-conference-lak19/ target=_blank rel=noopener>
+Proceedings
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/edm18_wk/>Investigating How School Aggregated Data Can Influence in Predicting STEM Career from Student usage of an Intelligent Tutoring System</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/publication/edm18_wk/edm18_wk.pdf target=_blank rel=noopener>
+PDF
+</a>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/edm18_wk/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/stem/>
+Project
+</a>
+</div>
+</div>
+<div class=view-list-item>
+<i class="far fa-file-alt pub-icon" aria-hidden=true></i>
+<a href=/publication/edm18_poster/>Predicting if students will pursue a STEM career using School Aggregated Data from their usage of an Intelligent Tutoring System</a>
+<div class=article-metadata>
+<span class=author-highlighted>
+Jihed Makhlouf</span>, <span>
+Tsunenori Mine</span>
+</div>
+<div class=btn-links>
+<button type=button class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename=/publication/edm18_poster/cite.bib>
+Cite
+</button>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=/project/stem/>
+Project
+</a>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://educationaldatamining.org/EDM2018/proceedings/ target=_blank rel=noopener>
+Proceedings
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id=contact class="home-section wg-contact">
+<div class=home-section-bg></div>
+<div class=container>
+<div class=row>
+<div class="col-12 col-lg-4 section-heading">
+<h1>Contact</h1>
+</div>
+<div class="col-12 col-lg-8">
+<ul class=fa-ul>
+<li>
+<i class="fa-li fas fa-envelope fa-2x" aria-hidden=true></i>
+<span id=person-email><a href=mailto:makhlouf_jihed@yahoo.fr>makhlouf_jihed@yahoo.fr</a></span>
+</li>
+<li>
+<i class="fa-li fas fa-phone fa-2x" aria-hidden=true></i>
+<span id=person-telephone><a href=tel:%28+81%29%20080-7834-5214>(+81) 080-7834-5214</a></span>
+</li>
+<li>
+<i class="fa-li fas fa-map-marker fa-2x" aria-hidden=true></i>
+<span id=person-address>744 Motooka, Nishi-ku, Fukuoka, Fukuoka 819-0395</span>
+</li>
+<li>
+<i class="fa-li fas fa-compass fa-2x" aria-hidden=true></i>
+<span>Kyushu University, Ito Campus, West 2 Building, 9th floor, Room 912</span>
+</li>
+</ul>
+<div class=d-none>
+<input id=map-provider value=2>
+<input id=map-lat value=33.59609789330994>
+<input id=map-lng value=130.2184463453689>
+<input id=map-dir value="744 Motooka, Nishi-ku, Fukuoka, Fukuoka 819-0395">
+<input id=map-zoom value=17>
+<input id=map-api-key value>
+</div>
+<div id=map></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+© Jihed Makhlouf - 2022 | All opinions expressed here are my own and do not necessarily represent those of my employers or collaborators.
+</p>
+<p class=powered-by>
+Published with
+<a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> —
+the free, <a href=https://github.com/wowchemy/wowchemy-hugo-modules target=_blank rel=noopener>
+open source</a> website builder that empowers creators.
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>Cite</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> Copy
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> Download
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
+<script>const code_highlighting=!0</script>
+<script>const search_config={indexURI:"/index.json",minLength:1,threshold:.3},i18n={no_results:"No results found",placeholder:"Search...",results:"results found"},content_type={post:"Posts",project:"Projects",publication:"Publications",event:"Events",slides:"Slides"}</script>
+<script id=search-hit-fuse-template type=text/x-template>
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
+<script src=/js/wowchemy.min.ac349c6e2fcc34ddbb8a8280b927af59.js></script>
+</body>
+</html>
